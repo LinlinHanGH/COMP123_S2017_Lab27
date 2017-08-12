@@ -13,7 +13,7 @@ using System.Windows.Forms;
  * Name: Linlin Han
  * Date: August 11, 2017
  * Description: Calculator Demo Project
- * Version: 1.5 - Added plus/minus function 
+ * Version: 1.6 - Added backsapce function 
  */
 
 namespace COMP123_S2017_Lab27
@@ -200,6 +200,7 @@ namespace COMP123_S2017_Lab27
                     this._showResult(operand);
                     break;
                 case "⌫":
+                    this._backSpace(operand);
                     break;
                 case "±":
                     this._showOppsite(operand);
@@ -209,6 +210,21 @@ namespace COMP123_S2017_Lab27
                     break;
             }
 
+
+        }
+
+        private void _backSpace(double operand)
+        {
+            string operandString = operand.ToString();
+            if (operandString.Length > 0)
+            { 
+            operandString =operandString.Substring(0,operandString.Length - 1);
+            ResultTextBox.Text = operandString;
+            }
+            else
+            { 
+            ResultTextBox.Text = "0";
+            }
 
         }
 
