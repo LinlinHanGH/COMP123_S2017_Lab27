@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name: Tom Tsiliopoulos
- * Date: August 3, 2017
+ * Name: Linlin Han
+ * Date: August 11, 2017
  * Description: Calculator Demo Project
- * Version: 1.2 - Fixed bug in CalculatorButton_Click 
+ * Version: 1.3 - Added multipication function 
  */
 
 namespace COMP123_S2017_Lab27
@@ -240,6 +240,9 @@ namespace COMP123_S2017_Lab27
                         break;
                     case "-":
                         this.Result = this.OperandList[0] - this.OperandList[1];
+                        break;
+                    case "x":
+                        this.Result = this.OperandList[0] * this.OperandList[1];
                         break;
                 }
                 this.OperandList.Clear();

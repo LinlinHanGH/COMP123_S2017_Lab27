@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name: Tom Tsiliopoulos
- * Date: August 3, 2017
+ * Name: Linlin Han
+ * Date: August 11, 2017
  * Description: Calculator Demo Project
  * Version: 0.3 - created an instance of the calculatorForm object
  */

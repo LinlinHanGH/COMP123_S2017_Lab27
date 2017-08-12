@@ -45,7 +45,7 @@
             this.WelcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WelcomeLabel.Location = new System.Drawing.Point(12, 52);
             this.WelcomeLabel.Name = "WelcomeLabel";
-            this.WelcomeLabel.Size = new System.Drawing.Size(293, 64);
+            this.WelcomeLabel.Size = new System.Drawing.Size(335, 76);
             this.WelcomeLabel.TabIndex = 0;
             this.WelcomeLabel.Text = "Welcome to my \r\nAwesome Calculator";
             this.WelcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -63,6 +63,7 @@
             this.Name = "SplashForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashForm";
+            this.Load += new System.EventHandler(this.SplashForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

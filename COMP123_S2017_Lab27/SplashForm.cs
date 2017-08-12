@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name: Tom Tsiliopoulos
- * Date: August 8, 2017
+ * Name: Linlin Han
+ * Date: August 11, 2017
  * Description: This is the SplashForm class
  * Version: 0.4 - Created a Public Property as an Alias to Program.calculatorForm
  */
@@ -53,6 +53,11 @@ namespace COMP123_S2017_Lab27
             this.Hide();
 
             SplashFormTimer.Enabled = false; // turn timer off
+        }
+
+        private void SplashForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
