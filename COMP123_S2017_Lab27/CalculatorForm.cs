@@ -13,7 +13,7 @@ using System.Windows.Forms;
  * Name: Linlin Han
  * Date: August 11, 2017
  * Description: Calculator Demo Project
- * Version: 1.3 - Added multipication function 
+ * Version: 1.4 - Added division function 
  */
 
 namespace COMP123_S2017_Lab27
@@ -243,6 +243,17 @@ namespace COMP123_S2017_Lab27
                         break;
                     case "x":
                         this.Result = this.OperandList[0] * this.OperandList[1];
+                        break;
+                    case "÷":
+                        if (this.OperandList[1] != 0)
+                        {
+                            this.Result = this.OperandList[0] / this.OperandList[1];
+                        }
+                        else
+                        {
+                            double zero = 0;
+                            this.Result = 1 / zero;
+                        }
                         break;
                 }
                 this.OperandList.Clear();
