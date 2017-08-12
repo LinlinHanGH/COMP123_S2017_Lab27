@@ -13,7 +13,7 @@ using System.Windows.Forms;
  * Name: Linlin Han
  * Date: August 11, 2017
  * Description: Calculator Demo Project
- * Version: 1.4 - Added division function 
+ * Version: 1.5 - Added plus/minus function 
  */
 
 namespace COMP123_S2017_Lab27
@@ -202,11 +202,28 @@ namespace COMP123_S2017_Lab27
                 case "⌫":
                     break;
                 case "±":
+                    this._showOppsite(operand);
                     break;
                 default:
                     this._calculate(operand, operatorButton.Text);
                     break;
             }
+
+
+        }
+
+        /// <summary>
+        /// This method shows the Oppiste (plus/minus) result of operand/result
+        /// </summary>
+        private void _showOppsite(double operand)
+        {
+            if (this.CurrentOperator == "=")
+            {
+                this.Result *= -1;
+                ResultTextBox.Text = this.Result.ToString();
+            }
+            operand *= -1;
+            ResultTextBox.Text = operand.ToString();
 
 
         }
